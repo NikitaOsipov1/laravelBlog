@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', '\App\Http\Controllers\MainController@home');
+Route::get('/', '\App\Http\Controllers\MainController@home')->name('home');
 
 Route::get('/createPost', '\App\Http\Controllers\MainController@createPost');
 

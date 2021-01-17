@@ -26,6 +26,7 @@
     <form action="/createPost/check" method="post">
         @csrf
         <input type="text" name="name" id="name" placeholder="Enter name" class="form-control">
+        <input type="text" name="title" id="title" placeholder="Enter title" class="form-control">
         <textarea name="post" id="post" cols="30" rows="10" class="form-control" placeholder="Create post"></textarea>
         <input type="submit" class="btn btn-success">
     </form>
