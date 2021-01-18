@@ -12,7 +12,12 @@
 
     <header class="d-flex justify-content-around align-items-center p-3 px-md-4 mb-3 bg-dark text-white border-bottom shadow-sm">
         <h5 class="my-0 me-md-auto fw-normal">Blog</h5>
-        <a class="btn btn-warning" href="{{ url('/createPost') }}">Create Post</a>
+        <nav>
+           <!-- <a class="btn btn-warning" style="margin-right: 40px;" href="{{ url('/createPost') }}">Create Post</a>-->
+            <a class="btn btn-warning" style="margin-right: 40px;" href="{{url('/login')}}">Sign In</a>
+            <a class="btn btn-warning"  href="{{url('/register')}}">Sign Up</a>
+        </nav>
+
     </header>
 
     <div class="d-flex flex-column " style="width: 500px;margin: 0 auto;">
@@ -27,8 +32,6 @@
             </div>
         @endforeach
     </div>
-
-
 
 </body>
 </html>

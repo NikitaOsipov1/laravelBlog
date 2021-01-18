@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
+use App\Models\User;
+
 
 class MainController extends Controller
 {
@@ -11,6 +13,15 @@ class MainController extends Controller
         $posts = new Post;
         return view('home', ['posts'=>$posts->all()]);
     }
+
+    public function dashboard(){
+        $posts = new Post;
+        $user = new User;
+        echo($user['name']);
+        return view('dashboard', ['posts'=>$posts->all()]);
+    }
+
+
 
     public function createPost(){
         return view('createPost');
@@ -28,7 +39,7 @@ class MainController extends Controller
 
         $post->save();
 
-        return redirect()->route('home');
+        return redirect()->route('dashboard');
 
        // return view('home');
     }
