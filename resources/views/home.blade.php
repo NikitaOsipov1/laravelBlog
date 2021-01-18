@@ -22,7 +22,7 @@
             <div class="card bg-info " style="margin-bottom: 25px;border-radius: 10px;">
                 <h3 class="card-header">{{$el->title}}</h3>
                 <b class="card-body">{{$el->post }}</b>
-                <p class="card-footer">{{$el->name}} <br>
+                <p class="card-footer ">{{$el->name}} <br>
                 Posted at {{$el->created_at}}</p>
             </div>
         @endforeach
